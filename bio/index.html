@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title></title>
-  <meta name="description" content="">
+  <title>Danny Yagan, Assistant Professor</title>
+  <meta name="description" content="Danny Yagan, Assistant Professor of Economics, UC Berkeley">
 
   <link rel="canonical" href="http://dannyyagan.com/bio/">
 
@@ -14,17 +14,15 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 
   <body>
     <div class="container">
-    
+
       <div class="page-header">
          <h1>Danny Yagan <small>Assistant Professor</small></h1>
       </div>
@@ -36,11 +34,11 @@
           <br />
 
           <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/bio/">Bio</a></li>
+            <li id="home"><a href="/">Home</a></li>
+            <li id="bio"><a href="/bio/">Bio</a></li>
             <li><a href="">CV</a></li>
-            <li><a href="/research/">Research</a></li>
-            <li><a href="/lectures/">Lectures</a></li>
+            <li id="research"><a href="/research/">Research</a></li>
+            <li id="lectures"><a href="/lectures/">Lectures</a></li>
           </ul>
 
         </div>
@@ -48,7 +46,25 @@
           <h2>Bio</h2>
         </div>
       </div>
-
     </div>
   </body>
+
+  <script type="text/javascript">
+    if (!String.prototype.startsWith) {
+        String.prototype.startsWith = function(searchString, position){
+          position = position || 0;
+          return this.substr(position, searchString.length) === searchString;
+      };
+    }
+    var url = window.location;
+    if (url.pathname == '/') {
+        $('#home').addClass('active');
+    } else if (url.pathname.startsWith("/bio")) {
+        $("#bio").addClass('active');
+    } else if (url.pathname.startsWith("/research")) {
+        $("#research").addClass('active');
+    } else if (url.pathname.startsWith("/lectures")) {
+        $("#lectures").addClass('active');
+    }
+</script>
 </html>
