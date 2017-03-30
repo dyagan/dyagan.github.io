@@ -83,6 +83,65 @@
       </td>
     </a> 
 
+    <div class="faq_container">
+			<div class="faq">
+				<div class="faq_question">Click to view data <b class="caret"></b></div>
+					<div class="faq_answer_container" id="data_college">
+						<div class="faq_answer">
+							<div class="info" style="margin-top: -25px;">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Data Description</th>
+											<th colspan="3" class="text-center">Download</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="width:76%">Online Data Table 1<br>Preferred Estimates of Access and Mobility Rates by College</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 2<br>Baseline Cross-Sectional Estimates by College</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 3<br>Baseline Longitudinal Estimates by College and Child's Cohort</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 4<br>Cross-Sectional Estimates by College: Heterogeneity by Gender and Alternative College and Income Definitions</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 5<br>Longitudinal Estimates by College and Cohort: Heterogeneity by Gender and Alternative College and Income Definitions</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 6<br>Cross-Sectional Statistics by College Tier and Parent Income Percentile</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 7<br>Cross-Sectional Statistics on Children’s Income Distributions by College Tier</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 8<br>Longitudinal Statistics by College Tier, Parent Income Ventile, and Cohort</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 9<br>Percentile Cutoffs for Parent and Child Income by Birth Cohort</td>
+										</tr>
+										<tr>
+											<td style="width:76%">Online Data Table 10<br>College Level Characteristics</td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td style="width:76%">Replication Code and Datasets</td>
+										</tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	
+
+
   </body>
 
   <script type="text/javascript">
@@ -102,5 +161,27 @@
     } else if (url.pathname.startsWith("/lectures")) {
         $("#lectures").addClass('active');
     }
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    </script>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+ 
+    $('.faq_question').click(function() {
+ 
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+ 
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+ 
+    });
+ 
+});
 </script>
 </html>
