@@ -20,3 +20,10 @@
     overflow: hidden;
     padding: 0px;
 }
+
+
+#bootstrap-overrides p { background: red; }
+
+p.dycustom {
+	background: red;
+}
