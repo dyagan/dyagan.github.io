@@ -22,7 +22,7 @@
 }
 
 
-#bootstrap-overrides p { background: red; }
+#bootstrap-overrides p { margin: 0 }
 
 p.dycustom {
 	background: red;
