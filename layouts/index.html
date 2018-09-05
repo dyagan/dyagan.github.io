@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+Sup, y'all. Danny here. Nomad.
+
+<section id=content>
+  <ul class=posts_listing>
+    {{ range .Pages }}
+      <li>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div id=date>
+          <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ partial "footer.html" . }}
+
