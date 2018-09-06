@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black &amp; Light</title>
+    <title>Danny Yagan</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Black &amp; Light</description>
+    <description>Recent content on Danny Yagan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 08 Jan 2017 00:00:00 +0000</lastBuildDate>
@@ -30,19 +30,6 @@ This is bold text</description>
       <guid>http://localhost:1313/post/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>About Hugo</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
     </item>
     
     <item>
@@ -78,6 +65,15 @@ Follow the following steps:
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/bio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bio/</guid>
+      <description>Danny Yagan is Assistant Professor of Economics at the University of California-Berkeley, Faculty Research Fellow of the National Bureau of Economic Research, Faculty Co-Director of the Taxation and Inequality Initiative of the Berkeley Opportunity Lab, and Faculty Associate of the Berkeley Burch Center for Tax Policy and Public Finance. He holds a BA summa cum laude and PhD in economics from Harvard. Between his degrees, he worked as a management consultant at McKinsey &amp;amp; Company.</description>
     </item>
     
   </channel>

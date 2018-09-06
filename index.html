@@ -21,7 +21,7 @@
     <title>
       
       
-         Black &amp; Light 
+         Danny Yagan 
       
     </title>
     <link rel="canonical" href="http://localhost:1313/">
@@ -54,7 +54,7 @@
   a img {
     border:none;
   }
-
+  
   img {
     margin: 10px auto 10px auto;
     max-width: 100%;
@@ -385,75 +385,83 @@
       font-size:12px;
     }
   }
+
+  
+
+  * {
+      box-sizing: border-box;
+  }
+
+
+  .column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+
 </style>
 
 
-    
-      <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Black &amp; Light" />
-    
   </head>
 
   <body>
     <section id=nav>
-      <h1><a href="http://localhost:1313/">Black &amp; Light</a></h1>
+      <h1><a href="http://localhost:1313/">Prof. Danny Yagan</a></h1>
+      <h4><a href="https://www.econ.berkeley.edu/">UC Berkeley Economics</a></h4>
       <ul>
         
-          <li><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">About</a></li>
+          <li><a href="http://localhost:1313/">Home</a></li>
         
-          <li><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">Projects</a></li>
+          <li><a href="http://localhost:1313/bio/index.html">Bio</a></li>
         
-          <li><a href="https://github.com/davidhampgonsalves/hugo-black-and-light-theme">Resume</a></li>
+          <li><a href="http://localhost:1313/research/index.html">Research</a></li>
+        
+          <li><a href="http://localhost:1313/data/index.html">Data</a></li>
+        
+          <li><a href="http://localhost:1313/teaching/index.html">Teaching</a></li>
+        
+          <li><a href="http://localhost:1313/press/index.html">Press</a></li>
         
       </ul>
     </section>
 
-<section id=content>
-  <ul class=posts_listing>
+
+
+
+<section id=content>  
+<div class=row>
+    <div class=column>
+      <div class="content">
+          <img src="http://localhost:1313/assets/headshot.jpg" style="width: 100%; margin-bottom: 0%; margin-top: 0%; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
     
-      <li>
-        <h2><a href="http://localhost:1313/post/hugo-block-and-light-theme/">Black &amp; Light Demo</a></h2>
-        <div id=date>
-          <time>January 2017</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="http://localhost:1313/post/creating-a-new-theme/">Creating a New Theme</a></h2>
-        <div id=date>
-          <time>September 2014</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="http://localhost:1313/about/">About Hugo</a></h2>
-        <div id=date>
-          <time>April 2014</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="http://localhost:1313/post/goisforlovers/">(Hu)go Template Primer</a></h2>
-        <div id=date>
-          <time>April 2014</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="http://localhost:1313/post/hugoisforlovers/">Getting Started with Hugo</a></h2>
-        <div id=date>
-          <time>April 2014</time>
-        </div>
-      </li>
-    
-      <li>
-        <h2><a href="http://localhost:1313/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h2>
-        <div id=date>
-          <time>March 2014</time>
-        </div>
-      </li>
-    
-  </ul>
+    <div class=column>
+      <div class="entry-content">
+        Email: <a href="mailto:yagan@berkeley.edu">yagan@berkeley.edu</a>
+        <br>
+        On leave at Stanford 2018-2019.
+        <br>
+        Office hours by appointment at Berkeley and Stanford.
+      </div>
+    </div>
+
+</div>
 </section>
+
 
   
 <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>

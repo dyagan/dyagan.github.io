@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="http://localhost:1313/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/favicon_128x128.png" sizes="128x128">
+
+    <title>
+      
+      
+         Research in the Press 
+      
+    </title>
+    <link rel="canonical" href="http://localhost:1313/press/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+    text-decoration-skip: ink;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+  
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .left-justify {
+    float: left;
+  }
+
+  .right-justify {
+    float:right;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+
+  
+
+  * {
+      box-sizing: border-box;
+  }
+
+
+  .column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+
+</style>
+
+
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="http://localhost:1313/">Prof. Danny Yagan</a></h1>
+      <h4><a href="https://www.econ.berkeley.edu/">UC Berkeley Economics</a></h4>
+      <ul>
+        
+          <li><a href="http://localhost:1313/">Home</a></li>
+        
+          <li><a href="http://localhost:1313/bio/index.html">Bio</a></li>
+        
+          <li><a href="http://localhost:1313/research/index.html">Research</a></li>
+        
+          <li><a href="http://localhost:1313/data/index.html">Data</a></li>
+        
+          <li><a href="http://localhost:1313/teaching/index.html">Teaching</a></li>
+        
+          <li><a href="http://localhost:1313/press/index.html">Press</a></li>
+        
+      </ul>
+    </section>
+
+
+<h3>Research in the Press</h3>
+
+
+
+	
+
+		<p>
+			<span style="text-decoration: underline;">Business in the United States: Who Owns It and How Much Tax Do They Pay?</span>
+		</p>
+
+		<table width="100%">
+			<thead>
+				<tr>
+					<th style="text-align: center;" width="15%"></th>
+					<th style="text-align: left;" width="85%"></th>
+				</tr>
+			</thead>
+
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/wsj.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://blogs.wsj.com/washwire/2015/09/24/surprising-data-on-who-owns-u-s-firms-and-how-much-they-pay-in-taxes/" target="_blank">"Surprising Data on Who Owns U.S. Firms and How Much They Pay in Taxes"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+
+		</table>
+
+	
+
+
+
+	
+
+		<p>
+			<span style="text-decoration: underline;">Capital Tax Reform and the Real Economy: The Effects of the 2003 Dividend Tax Cut</span>
+		</p>
+
+		<table width="100%">
+			<thead>
+				<tr>
+					<th style="text-align: center;" width="15%"></th>
+					<th style="text-align: left;" width="85%"></th>
+				</tr>
+			</thead>
+
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/vox.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.vox.com/2015/1/21/7863239/taxes-investment-yagan" target="_blank">"Obama critics say his tax proposal will hurt investment. The best evidence says it won&#39;t."</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+
+		</table>
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+		<p>
+			<span style="text-decoration: underline;">Employment Hysteresis from the Great Recession</span>
+		</p>
+
+		<table width="100%">
+			<thead>
+				<tr>
+					<th style="text-align: center;" width="15%"></th>
+					<th style="text-align: left;" width="85%"></th>
+				</tr>
+			</thead>
+
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/nyt.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.nytimes.com/2017/10/05/business/economy/recession-recovery.html" target="_blank">"Why Some Scars From the Recessions May Never Vanish"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/AtlanticMth.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.theatlantic.com/business/archive/2017/12/great-recession-still-with-us/547268/" target="_blank">"The Great Recession Is Still With Us"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/wp.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.washingtonpost.com/news/wonk/wp/2016/06/23/the-most-unlucky-places-in-america/?utm_term=.6a925759b427" target="_blank">"They&#39;re some of the unluckiest places in America - and may confirm what&#39;s wrong with the economy"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+
+		</table>
+
+	
+
+
+
+	
+
+		<p>
+			<span style="text-decoration: underline;">Mobility Report Cards: The Role of Colleges in Intergenerational Mobility</span>
+		</p>
+
+		<table width="100%">
+			<thead>
+				<tr>
+					<th style="text-align: center;" width="15%"></th>
+					<th style="text-align: left;" width="85%"></th>
+				</tr>
+			</thead>
+
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/politico.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.politico.com/interactives/2017/top-college-rankings-list-2017-us-news-investigation/" target="_blank">"How U.S. News college rankings promote economic inequality on campus"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/AtlanticMth.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.theatlantic.com/business/archive/2017/08/universities-inequality-fighters/538566/" target="_blank">"The Myth of American Universities as Inequality-Fighters"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/wp.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.washingtonpost.com/news/grade-point/wp/2017/07/10/new-rankings-tackle-old-problem-measuring-the-outcome-of-college/?noredirect=on&amp;utm_term=.e468ec4f67d4" target="_blank">"New rankings tackle old problem: Measuring the outcome of college"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/vox.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.vox.com/policy-and-politics/2017/2/28/14359140/chetty-friedman-college-mobility" target="_blank">"These colleges are better than Harvard at making poor kids rich"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/economist.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="www.economist.com/news/united-states/21715735-new-data-show-joining-1-remains-unsettlingly-hereditary-skipping-class" target="_blank">"Skipping class"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/forbes.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.forbes.com/sites/prestoncooper2/2017/01/25/higher-educations-questionable-equality-of-opportunity-promise/" target="_blank">"Higher Education&#39;s Questionable Equality-of-Opportunity Promise"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/sacbee.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.sacbee.com/news/state/california/article128346494.html" target="_blank">"Which California Colleges Help Transform Impoverished Students into Wealthy Adults"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/csmonitor.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.csmonitor.com/EqualEd/2017/0124/Why-Cal-State-L.A.-turns-the-most-low-income-students-into-top-earners" target="_blank">"Why Cal State L.A. Turns the Most Low-Income Students into Top Earners"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/cuny.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="http://www1.cuny.edu/mu/forum/2017/01/20/city-tech-ranks-top-five-nationwide-in-college-mobility-low-income-students-go-far-and-earn-more/" target="_blank">"City Tech Ranks Top Five Nationwide in College Mobility, Low-Income Students Go Far and Earn More"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/nyt.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.nytimes.com/interactive/2017/01/18/upshot/some-colleges-have-more-students-from-the-top-1-percent-than-the-bottom-60.html" target="_blank">"Some Colleges Have More Students From the Top 1 Percent Than the Bottom 60. Find Yours."</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/nyt.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.nytimes.com/2017/01/18/opinion/sunday/americas-great-working-class-colleges.html" target="_blank">"America&#39;s Great Working-Class Colleges"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/nyt.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.nytimes.com/interactive/projects/college-mobility/" target="_blank">"Economic Diversity and Student Outcomes at America&#39;s Colleges and Universities: Find Your College"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+
+		</table>
+
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	
+
+		<p>
+			<span style="text-decoration: underline;">How Does Your Kindergarten Classroom Affect Your Earnings? Evidence from Project STAR</span>
+		</p>
+
+		<table width="100%">
+			<thead>
+				<tr>
+					<th style="text-align: center;" width="15%"></th>
+					<th style="text-align: left;" width="85%"></th>
+				</tr>
+			</thead>
+
+			
+				<tbody>
+					<tr>
+						<td>
+							<img src="http://localhost:1313/assets/press/nyt.png" alt="" height="18" border="0">
+						</td>
+						<td style="color: black; margin: 10px; line-height: 25px; text-align: left;">
+							<p>
+								<a href="https://www.nytimes.com/2010/07/28/business/economy/28leonhardt.html?mtrref=undefined&amp;gwh=4DFC3ACA5ABA4EFE82170F103B1B1267&amp;gwt=pay" target="_blank">"The Case for $320,000 Kindergarten Teachers"</a>
+							</p>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</tbody>
+			
+
+		</table>
+
+	
+
+
+
+	
+
+
+
+  
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>
