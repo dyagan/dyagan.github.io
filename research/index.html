@@ -9,10 +9,6 @@
     <meta name="referrer" content="no-referrer">
     
 
-    
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
-    
-
     <link rel="icon" type="image/png" href="/favicon_16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon_32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon_128x128.png" sizes="128x128">
@@ -22,424 +18,41 @@
       
          Research 
       
-      
     </title>
+    
     <link rel="canonical" href="https://www.dyagan.github.io/research/">
 
-    <style>
-  * {
-    border:0;
-    font:inherit;
-    font-size:100%;
-    vertical-align:baseline;
-    margin:0;
-    padding:0;
-    color: black;
-    text-decoration-skip: ink;
-  }
+    
 
-  body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-    font-size:17px;
-    line-height:160%;
-    color:#1d1313;
-    max-width:700px;
-    margin:auto;
-  }
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
 
-  p {
-    margin: 20px 0;
-  }
 
-  a img {
-    border:none;
-  }
-  
-  img {
-    margin: 10px auto 10px auto;
-    max-width: 100%;
-    display: block;
-  }
 
-  .left-justify {
-    float: left;
-  }
-
-  .right-justify {
-    float:right;
-  }
-
-  pre, code {
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: #f7f7f7;
-  }
-
-  code {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 16px;
-    word-wrap: normal;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-  }
-
-  pre>code {
-    padding: 0;
-    margin: 0;
-    font-size: 100%;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-
-  pre code {
-    display: inline;
-    max-width: auto;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-  }
-
-  pre code::before,
-  pre code::after {
-    content: normal;
-  }
-
-  em,q,em,dfn {
-    font-style:italic;
-  }
-
-  .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-  }
-
-  .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-  }
-
-  .heading,.serif,h1,h2,h3 {
-    font-family:"Old Standard TT",serif;
-  }
-
-  strong {
-    font-weight:600;
-  }
-
-  q:before {
-    content:"\201C";
-  }
-
-  q:after {
-    content:"\201D";
-  }
-
-  del,s {
-    text-decoration:line-through;
-  }
-
-  blockquote {
-    font-family:"Old Standard TT",serif;
-    text-align:center;
-    padding:50px;
-  }
-
-  blockquote p {
-    display:inline-block;
-    font-style:italic;
-  }
-
-  blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
-    content:'\201C';
-    font-size:35px;
-    color:#403c3b;
-  }
-
-  blockquote:after {
-    content:'\201D';
-  }
-
-  hr {
-    width:40%;
-    height: 1px;
-    background:#403c3b;
-    margin: 25px auto;
-  }
-
-  h1 {
-    font-size:35px;
-  }
-
-  h2 {
-    font-size:28px;
-  }
-
-  h3 {
-    font-size:22px;
-    margin-top:18px;
-  }
-
-  h1 a,h2 a,h3 a {
-    text-decoration:none;
-  }
-
-  h1,h2 {
-    margin-top:28px;
-  }
-
-  #sub-header, time {
-    color:#403c3b;
-    font-size:13px;
-  }
-
-  #sub-header {
-    margin: 0 4px;
-  }
-
-  #nav h1 a {
-    font-size:35px;
-    color:#1d1313;
-    line-height:120%;
-  }
-
-  .posts_listing a,#nav a {
-    text-decoration: none;
-  }
-
-  li {
-    margin-left: 20px;
-  }
-
-  ul li {
-    margin-left: 5px;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-  ul li:before {
-    content:"\00BB \0020";
-  }
-
-  #nav ul li:before, .posts_listing li:before {
-    content:'';
-    margin-right:0;
-  }
-
-  #content {
-    text-align:left;
-    width:100%;
-    font-size:15px;
-    padding:60px 0 80px;
-  }
-
-  #content h1,#content h2 {
-    margin-bottom:5px;
-  }
-
-  #content h2 {
-    font-size:25px;
-  }
-
-  #content .entry-content {
-    margin-top:15px;
-  }
-
-  #content time {
-    margin-left:3px;
-  }
-
-  #content h1 {
-    font-size:30px;
-  }
-
-  .highlight {
-    margin: 10px 0;
-  }
-
-  .posts_listing {
-    margin:0 0 50px;
-  }
-
-  .posts_listing li {
-    margin:0 0 25px 15px;
-  }
-
-  .posts_listing li a:hover,#nav a:hover {
-    text-decoration: underline;
-  }
-
-  #nav {
-    text-align:center;
-    position:static;
-    margin-top:60px;
-  }
-
-  #nav ul {
-    display: table;
-    margin: 8px auto 0 auto;
-  }
-
-  #nav li {
-    list-style-type:none;
-    display:table-cell;
-    font-size:15px;
-    padding: 0 20px;
-  }
-
-  #links {
-    margin: 50px 0 0 0;
-  }
-
-  #links :nth-child(2) {
-    float:right;
-  }
-
-  #not-found {
-    text-align: center;
-  }
-
-  #not-found a {
-    font-family:"Old Standard TT",serif;
-    font-size: 200px;
-    text-decoration: none;
-    display: inline-block;
-    padding-top: 225px;
-  }
-
-  @media (max-width: 750px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:28px;
-    }
-
-    #nav li {
-      font-size:13px;
-      padding: 0 15px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:50px;
-      font-size:14px;
-    }
-
-    #content h1 {
-      font-size:25px;
-    }
-
-    #content h2 {
-      font-size:22px;
-    }
-
-    .posts_listing li div {
-      font-size:12px;
-    }
-  }
-
-  @media (max-width: 400px) {
-    body {
-      padding-left:20px;
-      padding-right:20px;
-    }
-
-    #nav h1 a {
-      font-size:22px;
-    }
-
-    #nav li {
-      font-size:12px;
-      padding: 0 10px;
-    }
-
-    #content {
-      margin-top:0;
-      padding-top:20px;
-      font-size:12px;
-    }
-
-    #content h1 {
-      font-size:20px;
-    }
-
-    #content h2 {
-      font-size:18px;
-    }
-
-    .posts_listing li div{
-      font-size:12px;
-    }
-  }
-
-  
-
-  * {
-      box-sizing: border-box;
-  }
-
-
-  .column{
-    float: left;
-    width: 50%;
-    padding: 10px;
-  }
-
-
-  .row:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-
-
-</style>
-
+<link rel="stylesheet" href="https://www.dyagan.github.io/css/main.css">
+    
 
   </head>
+<body>
+  <section id=nav>
+    <h1><a href="/">Prof. Danny Yagan</a></h1>
+    <h4><a href="https://www.econ.berkeley.edu/">UC Berkeley Economics</a></h4>
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/bio/index.html">Bio</a></li>
+      
+        <li><a href="/research/index.html">Research</a></li>
+      
+        <li><a href="/data/index.html">Data</a></li>
+      
+        <li><a href="/teaching/index.html">Teaching</a></li>
+      
+        <li><a href="/press/index.html">Press</a></li>
+      
+    </ul>
+  </section>
 
-  <body>
-    <section id=nav>
-      <h1><a href="/">Prof. Danny Yagan</a></h1>
-      <h4><a href="https://www.econ.berkeley.edu/">UC Berkeley Economics</a></h4>
-      <ul>
-        
-          <li><a href="/">Home</a></li>
-        
-          <li><a href="/bio/index.html">Bio</a></li>
-        
-          <li><a href="/research/index.html">Research</a></li>
-        
-          <li><a href="/data/index.html">Data</a></li>
-        
-          <li><a href="/teaching/index.html">Teaching</a></li>
-        
-          <li><a href="/press/index.html">Press</a></li>
-        
-      </ul>
-    </section>
-
-
-<h3>Research</h3>
 
 
 <h5>Working Papers</h5>
@@ -451,7 +64,11 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/Capitalists.pdf" target="_blank">Capitalists in the Twenty-First Century</a>
+		<a href="https://eml.berkeley.edu/~yagan/Capitalists.pdf" target="_blank">Capitalists in the Twenty-First Century</a><br>
+		 (with M. Smith, O. Zidar, and E. Zwick) <br>
+		
+		 Revision invited at Quarterly Journal of Economics. <br>
+		
 		</p>
 	
 
@@ -461,7 +78,24 @@
 
 	
 		<p>
-			<a href="http://www.equality-of-opportunity.org/assets/documents/coll_mrc_paper.pdf" target="_blank">Mobility Report Cards: The Role of Colleges in Intergenerational Mobility</a>
+		<a href="http://www.equality-of-opportunity.org/assets/documents/coll_mrc_paper.pdf" target="_blank">Mobility Report Cards: The Role of Colleges in Intergenerational Mobility</a><br>
+		 (with R. Chetty, J. N. Friedman, E. Saez, and N. Turner) <br>
+		
+		
+		 
+			See also: 
+			
+				<a href="http://www.equality-of-opportunity.org/assets/documents/coll_mrc_summary.pdf" target="_blank">summary</a>
+			
+				<a href="http://www.equality-of-opportunity.org/assets/documents/coll_mrc_slides.pdf" target="_blank">slides</a>
+			
+				<a href="http://www.equality-of-opportunity.org/college/" target="_blank">study website</a>
+			
+				<a href="http://www.equality-of-opportunity.org/data/" target="_blank">data</a>
+			
+				<a href="https://sites.google.com/site/dannyyagan/college" target="_blank">selected mobility report cards</a>
+			
+		
 		</p>
 	
 
@@ -480,13 +114,39 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/BusinessOwnersTaxes.pdf" target="_blank">Business in the United States: Who Owns It and How Much Tax Do They Pay?</a>
+		<a href="https://eml.berkeley.edu/~yagan/BusinessOwnersTaxes.pdf" target="_blank">Business in the United States: Who Owns It and How Much Tax Do They Pay?</a><br>
+		 (with M. Cooper, J. McClelland, J. Pearce, R. Prisinzano, J. Sullivan, O. Zidar, and E. Zwick) <br>
+		 Tax Policy and the Economy 2016, volume 30 pp. 91-128 <br>
+		
+		 
+			See also: 
+			
+				<a href="https://eml.berkeley.edu/~yagan/BusinessOwnersTaxes_slides.pdf" target="_blank">slides</a>
+			
+				<a href="http://www.nber.org/digest/jan16/w21651.html" target="_blank">summary for public</a>
+			
+				<a href="https://vimeo.com/143020037" target="_blank">discussion with Jim Poterba</a>
+			
+		
 		</p>
 	
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/Hysteresis.pdf" target="_blank">Capital Tax Reform and the Real Economy: The Effects of the 2003 Dividend Tax Cut</a>
+		<a href="https://eml.berkeley.edu/~yagan/Hysteresis.pdf" target="_blank">Capital Tax Reform and the Real Economy: The Effects of the 2003 Dividend Tax Cut</a><br>
+		
+		 American Economic Review 2015, lead article, volume 105(12) pp. 3531-3563 <br>
+		
+		 
+			See also: 
+			
+				<a href="https://eml.berkeley.edu/~yagan/DividendTax_slides.pdf" target="_blank">slides</a>
+			
+				<a href="https://eml.berkeley.edu/~yagan/DividendTax_appx.pdf" target="_blank">appendix</a>
+			
+				<a href="https://eml.berkeley.edu/~yagan/DividendTax_dofiles.zip" target="_blank">replication zip file with adaptable code for firm-specific capital costs</a>
+			
+		
 		</p>
 	
 
@@ -496,7 +156,18 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/Hysteresis.pdf" target="_blank">Employment Hysteresis from the Great Recession</a>
+		<a href="https://eml.berkeley.edu/~yagan/Hysteresis.pdf" target="_blank">Employment Hysteresis from the Great Recession</a><br>
+		
+		 Journal of Political Economy, forthcoming <br>
+		
+		 
+			See also: 
+			
+				<a href="https://eml.berkeley.edu/~yagan/MigratoryInsurance.pdf" target="_blank">version with migration results</a>
+			
+				<a href="https://sites.google.com/site/dannyyagan/data" target="_blank">published data, including Great Recession local shocks and local employment and earnings effects</a>
+			
+		
 		</p>
 	
 
@@ -504,7 +175,16 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/OptimalTaxation.pdf" target="_blank">Optimal Taxation in Theory and Practice</a>
+		<a href="https://eml.berkeley.edu/~yagan/OptimalTaxation.pdf" target="_blank">Optimal Taxation in Theory and Practice</a><br>
+		 (with N. G. Mankiw and M. Weinzierl) <br>
+		 Journal of Economic Perspectives 2009, volume 23(4) pp. 147-174 <br>
+		
+		 
+			See also: 
+			
+				<a href="https://eml.berkeley.edu/~yagan/MWY_appx.pdf" target="_blank">appendix</a>
+			
+		
 		</p>
 	
 
@@ -512,13 +192,35 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/STAR.pdf" target="_blank">How Does Your Kindergarten Classroom Affect Your Earnings? Evidence from Project STAR</a>
+		<a href="https://eml.berkeley.edu/~yagan/STAR.pdf" target="_blank">How Does Your Kindergarten Classroom Affect Your Earnings? Evidence from Project STAR</a><br>
+		 (with R. Chetty, J.N. Friedman, N. Hilger, E. Saez, and D. W. Schanzenbach) <br>
+		 Quarterly Journal of Economics 2011, lead article volume 126(4) pp. 1593-1660 <br>
+		
+		 
+			See also: 
+			
+				<a href="https://eml.berkeley.edu/~yagan/STAR_slides.pdf" target="_blank">slides</a>
+			
+				<a href="https://eml.berkeley.edu/~yagan/STAR_appx.pdf" target="_blank">appendix</a>
+			
+				<a href="https://eml.berkeley.edu/~yagan/STAR_kappan.pdf" target="_blank">summary for education professionals</a>
+			
+		
 		</p>
 	
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/AffirmativeAction.pdf" target="_blank">Supply vs. Demand under an Affirmative Action Ban: Estimates from UC Law Schools</a>
+		<a href="https://eml.berkeley.edu/~yagan/AffirmativeAction.pdf" target="_blank">Supply vs. Demand under an Affirmative Action Ban: Estimates from UC Law Schools</a><br>
+		
+		 Journal of Public Economics 2016, volume 137 (May) pp. 38-50 <br>
+		
+		 
+			See also: 
+			
+				<a href="https://eml.berkeley.edu/~yagan/AffirmativeAction_wp.pdf" target="_blank">appendix</a>
+			
+		
 		</p>
 	
 
@@ -535,7 +237,11 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/ChasingReturns.pdf" target="_blank">Riding the Bubble? Chasing Returns into Illiquid Assets</a>
+		<a href="https://eml.berkeley.edu/~yagan/ChasingReturns.pdf" target="_blank">Riding the Bubble? Chasing Returns into Illiquid Assets</a><br>
+		
+		
+		
+		
 		</p>
 	
 
@@ -572,7 +278,11 @@
 
 	
 		<p>
-			<a href="https://eml.berkeley.edu/~yagan/SMRT.pdf" target="_blank">Alternation of SMRT Tumor Suppressor Function in Transformed Non-Hodgkin Lymphomas</a>
+		<a href="https://eml.berkeley.edu/~yagan/SMRT.pdf" target="_blank">Alternation of SMRT Tumor Suppressor Function in Transformed Non-Hodgkin Lymphomas</a><br>
+		 (with L. Song, A. Zlobin, P. Ghoshal, Q. Zhang, C. Houde, S. Wijzen, Q. Jiang, E. Nacheva, E. Davis, S. Galiegue-Zouitina, D. Catovsky, T. Grogan, R. Fisher, L. Miele, and L. Coignet) <br>
+		 Cancer Research 2005, volume 65(11) pp. 4554-4561 <br>
+		
+		
 		</p>
 	
 
