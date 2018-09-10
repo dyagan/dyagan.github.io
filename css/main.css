@@ -19,7 +19,7 @@ body {
 }
 
 p {
-  margin: 0px 0 20px;
+  margin: 0px 0 10px;
 }
 
 a img {
@@ -99,7 +99,7 @@ em,q,em,dfn {
   font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
 }
 
-.heading,.serif,h1,h2,h3, h4 {
+.heading,.serif,h1,h2,h3, h4, h5 {
   font-family:"Old Standard TT",serif;
 }
 
@@ -149,18 +149,30 @@ hr {
 }
 
 h1 {
-  font-size:35px;
+  font-size:27px;
 }
 
 h2 {
   font-size:28px;
 }
 
+h4 {
+  font-size:17px;
+
+}
+
 h3 {
   font-size:22px;
-  margin-top:18px;
+/*  margin-top:30px;*/
   border-bottom: 2px solid lightgrey;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 18px;
+/*  margin-top:30px;*/
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 10px;
 }
 
 h1 a,h2 a,h3 a {
@@ -181,7 +193,6 @@ h1,h2 {
 }
 
 #nav h1 a {
-  font-size:35px;
   color:#1d1313;
   line-height:120%;
 }
@@ -216,7 +227,7 @@ ul li:before {
   text-align:justify;
   width:100%;
   font-size:15px;
-  padding:60px 0 80px;
+  padding:45px 0 80px;
 }
 
 #content h1,#content h2 {
@@ -233,7 +244,7 @@ ul li:before {
 }
 
 #content h1 {
-  font-size:30px;
+  font-size:25px;
 }
 
 .highlight {
@@ -360,7 +371,6 @@ ul li:before {
     font-size:12px;
   }
 }
-
 
 
 * {

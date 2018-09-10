@@ -20,6 +20,10 @@
   </url>
   
   <url>
+    <loc>https://dyagan.github.io/projects/college/</loc>
+  </url>
+  
+  <url>
     <loc>https://dyagan.github.io/press/</loc>
   </url>
   
@@ -29,6 +33,11 @@
   
   <url>
     <loc>https://dyagan.github.io/teaching/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dyagan.github.io/projects/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
