@@ -18,6 +18,12 @@ body {
   margin:auto;
 }
 
+
+@media (min-width: 900px) {
+  #widebody{
+    width: 750px;
+  }
+}
 p {
   margin: 0px 0 10px;
 }
@@ -164,14 +170,14 @@ h4 {
 h3 {
   font-size:22px;
 /*  margin-top:30px;*/
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   margin-bottom: 10px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 17px;
 /*  margin-top:30px;*/
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
   margin-bottom: 10px;
 }
 
@@ -243,6 +249,11 @@ ul li:before {
   text-indent:-1.5em;
 }
 
+.indent{
+	padding-left: 2.5em;
+	text-indent: -1em;
+}
+
 #content time {
   margin-left:3px;
 }
@@ -263,13 +274,26 @@ ul li:before {
   margin:0 0 25px 15px;
 }
 
-.posts_listing li a:hover,#nav a:hover {
+#nav a:hover {
   border-bottom:1px dashed
 }
-.posts_listing li a:active,#nav a:active {
+
+#nav a:active {
   background-color: transparent;
   border-bottom:1px dashed;
 }
+
+/*.btn {
+  border: none;  
+}*/
+
+/* Style the active class*/
+/*#nav .activity, {
+  background-color: transparent;
+  border-bottom:1px dashed;
+}*/
+
+
 
 #nav {
   text-align:center;
@@ -418,7 +442,7 @@ a:link{
 }
 
 a:visited{
-  color: purple;
+  color: indigo;
 }
 
 a:hover{
@@ -430,3 +454,16 @@ a:active{
   background-color: skyblue;
 }
 
+/*SPECIFICS*/
+#journal {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#see-also::after {
+  content: ",";
+}
+
+#see-also:last-child:after {
+  content: ".";
+}
