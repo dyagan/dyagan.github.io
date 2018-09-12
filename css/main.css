@@ -8,18 +8,18 @@
   padding:0;
   color: #282828;
   background: white;
-/*  background: #FFFFFC;*/
+ /* background: #FFFFFC;*/
 /*  background: whitesmoke;*/
   text-decoration-skip: ink;
 }
 
 /*Font and size of the body*/
 body {
-  font-family: 'Muli', Sans-Serif;
-  font-size: 17px;
-/*  font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-  font-size:17px;*/
-  line-height:110%;
+font-family: 'Helvetica', Sans-Serif;
+/* font-family: 'Open sans', sans-serif;*/
+/*  font-family: 'Muli', Sans-Serif;*/
+  font-size: 15px;
+  line-height:131%;
   max-width:700px;
   margin:auto;
 }
@@ -27,23 +27,23 @@ body {
 
 /*Font of the headers*/
 .heading,.serif,h1,h2,h3, h4, h5 {
-  font-family: "Merriweather", serif;
-/*  font-family:"Old Standard TT",serif;*/
+  font-family: serif;
+/*font-family: 'Work sans', sans-serif;*/
+/*font-family: "Merriweather", serif;*/
 }
-
-
 
 /*Size of headers*/
 
 /*Danny Yagan title is h1*/
 h1 {
-  font-size:27px;
+  font-size:35px;
+  letter-spacing: 1px;
 }
 
 /*UC Berkeley link is h4*/
 h4 {
-  font-size:17px;
-  margin-top: 1px;
+  font-size:16px;
+  margin-top: 5px;
 }
 
 h3 {
@@ -56,9 +56,17 @@ h3 {
 /*Section headers on pages are h5*/
 h5 {
   font-size: 17px;
-  margin-top:30px;
+/*  margin-top:30px;*/
   border-bottom: 1px solid lightgrey;
   margin-bottom: 10px;
+}
+
+/*This adjusts the top padding*/
+#content {
+  text-align:justify;
+  width:100%;
+  padding-top:45px;
+  padding-bottom: 80px; 
 }
 
 
@@ -217,12 +225,7 @@ ul li:before {
   margin-right:0;
 }
 
-#content {
-  text-align:justify;
-  width:100%;
-  font-size:15px;
-  padding:45px 0 80px;
-}
+
 
 #content h1,#content h2 {
   margin-bottom:5px;
@@ -277,16 +280,21 @@ ul li:before {
   margin-top:60px;
 }
 
+/*this margin changes the distance between the sub-title and the menu items*/
 #nav ul {
   display: table;
-  margin: 8px auto 0 auto;
+  margin: 18px auto 0 auto;
 }
 
 #nav li {
   list-style-type:none;
   display:table-cell;
-  font-size:15px;
+/*  font-size:15px;*/
   padding: 0 20px;
+}
+
+.header.navbar-fixed-top {
+  z-index: 999;
 }
 
 #links {
@@ -312,15 +320,6 @@ ul li:before {
 
 /*RESIZING FOR SMALLER SCREENS*/
 
-@media screen and (max-width: 600px) {
-  .column{
-    width: 100%;
-  }
-  .img{
-    max-width: 75%;
-  }
-}
-
 @media (max-width: 750px) {
   body {
     padding-left:20px;
@@ -330,7 +329,7 @@ ul li:before {
 
 @media (min-width: 900px) {
   #widebody{
-    width: 750px;
+    width: 800px;
   }
 }
 
@@ -359,12 +358,12 @@ ul li:before {
     font-size:25px;
   }
 
-  #content h2 {
-    font-size:22px;
+  h4 {
+    font-size:15px;
   }
 
-  .posts_listing li div {
-    font-size:12px;
+  #content h5 {
+    font-size:15px;
   }
 }
 
@@ -393,12 +392,12 @@ ul li:before {
     font-size:20px;
   }
 
-  #content h2 {
-    font-size:18px;
+  h4 {
+    font-size:13px;
   }
 
-  .posts_listing li div{
-    font-size:12px;
+  #content h5 {
+    font-size:13px;
   }
 }
 
@@ -411,6 +410,7 @@ ul li:before {
 .column{
   float: left;
   padding: 10px;
+  padding-top: 0px;
 }
 
 .left{
@@ -421,13 +421,24 @@ ul li:before {
 	width: 67%;
 }
 
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
+@media screen and (max-width: 600px) {
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+  .headshot{
+    max-width: 50%;
+    height: auto;
+  }
+}
 
 /*SPECIFICS*/
 #journal {
