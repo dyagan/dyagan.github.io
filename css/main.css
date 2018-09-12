@@ -1,3 +1,4 @@
+/*Background and font color*/
 * {
   border:0;
   font:inherit;
@@ -5,25 +6,84 @@
   vertical-align:baseline;
   margin:0;
   padding:0;
-  color: black;
+  color: #282828;
+  background: white;
+/*  background: #FFFFFC;*/
+/*  background: whitesmoke;*/
   text-decoration-skip: ink;
 }
 
+/*Font and size of the body*/
 body {
-  font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-  font-size:17px;
+  font-family: 'Muli', Sans-Serif;
+  font-size: 17px;
+/*  font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+  font-size:17px;*/
   line-height:110%;
-  color:#1d1313;
   max-width:700px;
   margin:auto;
 }
 
 
-@media (min-width: 900px) {
-  #widebody{
-    width: 750px;
-  }
+/*Font of the headers*/
+.heading,.serif,h1,h2,h3, h4, h5 {
+  font-family: "Merriweather", serif;
+/*  font-family:"Old Standard TT",serif;*/
 }
+
+
+
+/*Size of headers*/
+
+/*Danny Yagan title is h1*/
+h1 {
+  font-size:27px;
+}
+
+/*UC Berkeley link is h4*/
+h4 {
+  font-size:17px;
+  margin-top: 1px;
+}
+
+h3 {
+  font-size:22px;
+/*  margin-top:30px;*/
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+/*Section headers on pages are h5*/
+h5 {
+  font-size: 17px;
+  margin-top:30px;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+
+/*Color/styling of the links*/
+
+#content a:link{
+  color: #104E8B;
+  text-decoration: none;
+}
+
+#content a:visited{
+  color: indigo;
+}
+
+#content a:hover{
+  color: #B80000;
+  text-decoration: underline;
+}
+
+#content a:active{
+  background-color: skyblue;
+}
+
+/**************************************************************************/
+
 p {
   margin: 0px 0 10px;
 }
@@ -97,21 +157,6 @@ em,q,em,dfn {
   font-style:italic;
 }
 
-.sans,html .gist .gist-file .gist-meta {
-  font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
-}
-
-.mono,pre,code,tt,p code,li code {
-  font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-}
-
-.heading,.serif,h1,h2,h3, h4, h5 {
-  font-family:"Old Standard TT",serif;
-}
-
-strong {
-  font-weight:600;
-}
 
 q:before {
   content:"\201C";
@@ -121,92 +166,35 @@ q:after {
   content:"\201D";
 }
 
-del,s {
-  text-decoration:line-through;
-}
-
-blockquote {
-  font-family:"Old Standard TT",serif;
-  text-align:center;
-  padding:50px;
-}
-
-blockquote p {
-  display:inline-block;
-  font-style:italic;
-}
-
-blockquote:before,blockquote:after {
-  font-family:"Old Standard TT",serif;
-  content:'\201C';
-  font-size:35px;
-  color:#403c3b;
-}
-
-blockquote:after {
-  content:'\201D';
-}
-
-hr {
-  width:40%;
-  height: 1px;
-  background:#403c3b;
-  margin: 25px auto;
-}
-
-h1 {
-  font-size:27px;
-}
-
-h2 {
-  font-size:28px;
-}
-
-h4 {
-  font-size:17px;
-
-}
-
-h3 {
-  font-size:22px;
-/*  margin-top:30px;*/
-  border-bottom: 1px solid lightgrey;
-  margin-bottom: 10px;
-}
-
-h5 {
-  font-size: 17px;
-/*  margin-top:30px;*/
-  border-bottom: 1px solid lightgrey;
-  margin-bottom: 10px;
-}
 
 h1 a,h2 a,h3 a {
   text-decoration:none;
 }
 
-h1,h2 {
+h1 {
   margin-top:28px;
 }
 
-#sub-header, time {
-  color:#403c3b;
+/*#sub-header, time {
   font-size:13px;
 }
 
 #sub-header {
   margin: 0 4px;
-}
+}*/
 
 #nav h1 a {
-  color:#1d1313;
+/*  color:#1d1313;*/
   line-height:120%;
 }
 
-.posts_listing a,#nav a {
+#nav a {
   text-decoration: none;
-  color: black;
   background-color: none;
+}
+
+#nav li::before {
+  content: "";
 }
 
 li {
@@ -224,7 +212,7 @@ ul li:before {
   content:"\00BB \0020";
 }
 
-#nav ul li:before, .posts_listing li:before {
+#nav ul li:before, {
   content:'';
   margin-right:0;
 }
@@ -244,34 +232,21 @@ ul li:before {
   font-size:25px;
 }
 
+/*Used to have hanging text in research*/
 .hanging{
   padding-left: 1.5em;
   text-indent:-1.5em;
 }
 
+/*Used to indent lists in data page*/
 .indent{
 	padding-left: 2.5em;
 	text-indent: -1em;
 }
 
-#content time {
-  margin-left:3px;
-}
 
 #content h1 {
   font-size:25px;
-}
-
-.highlight {
-  margin: 10px 0;
-}
-
-.posts_listing {
-  margin:0 0 50px;
-}
-
-.posts_listing li {
-  margin:0 0 25px 15px;
 }
 
 #nav a:hover {
@@ -282,6 +257,7 @@ ul li:before {
   background-color: transparent;
   border-bottom:1px dashed;
 }
+
 
 /*.btn {
   border: none;  
@@ -326,11 +302,36 @@ ul li:before {
 }
 
 #not-found a {
-  font-family:"Old Standard TT",serif;
   font-size: 200px;
   text-decoration: none;
   display: inline-block;
   padding-top: 225px;
+}
+
+
+
+/*RESIZING FOR SMALLER SCREENS*/
+
+@media screen and (max-width: 600px) {
+  .column{
+    width: 100%;
+  }
+  .img{
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+@media (min-width: 900px) {
+  #widebody{
+    width: 750px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -427,32 +428,6 @@ ul li:before {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .column{
-    width: 100%;
-  }
-  .img{
-    max-width: 75%;
-  }
-}
-
-a:link{
-  color: steelblue;
-  text-decoration: none;
-}
-
-a:visited{
-  color: indigo;
-}
-
-a:hover{
-  color: red;
-  text-decoration: underline;
-}
-
-a:active{
-  background-color: skyblue;
-}
 
 /*SPECIFICS*/
 #journal {
