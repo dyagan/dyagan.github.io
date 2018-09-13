@@ -8,14 +8,28 @@
   padding:0;
   color: #282828;
   background: white;
- /* background: #FFFFFC;*/
-/*  background: whitesmoke;*/
+/*  background: #FFFFFC;*/
   text-decoration-skip: ink;
 }
 
+/*FONT TOGGLING*/
+
+body{
+  font-family: 'Helvetica', Sans-Serif;
+}
+
+.heading,.serif,h1,h2,h3, h4, h5 {
+  font-family: serif;
+}
+
+
+
+
+
+
 /*Font and size of the body*/
 body {
-font-family: 'Helvetica', Sans-Serif;
+/*  font-family: 'Helvetica', Sans-Serif;*/
 /* font-family: 'Open sans', sans-serif;*/
 /*  font-family: 'Muli', Sans-Serif;*/
   font-size: 15px;
@@ -27,7 +41,7 @@ font-family: 'Helvetica', Sans-Serif;
 
 /*Font of the headers*/
 .heading,.serif,h1,h2,h3, h4, h5 {
-  font-family: serif;
+/*  font-family: serif;*/
 /*font-family: 'Work sans', sans-serif;*/
 /*font-family: "Merriweather", serif;*/
 }
@@ -261,23 +275,20 @@ ul li:before {
   border-bottom:1px dashed;
 }
 
+.current {
+  border-bottom: 1px solid;
+}
 
 /*.btn {
   border: none;  
 }*/
 
-/* Style the active class*/
-/*#nav .activity, {
-  background-color: transparent;
-  border-bottom:1px dashed;
-}*/
-
-
-
 #nav {
   text-align:center;
-  position:static;
+  position: static;
   margin-top:60px;
+  width: 100%;
+  background: white;
 }
 
 /*this margin changes the distance between the sub-title and the menu items*/
@@ -293,8 +304,9 @@ ul li:before {
   padding: 0 20px;
 }
 
-.header.navbar-fixed-top {
-  z-index: 999;
+#nav.navbar-fixed-top {
+    z-index: 999;
+    top: 0;
 }
 
 #links {
@@ -340,7 +352,7 @@ ul li:before {
   }
 
   #nav h1 a {
-    font-size:28px;
+    font-size:32px;
   }
 
   #nav li {
@@ -374,7 +386,7 @@ ul li:before {
   }
 
   #nav h1 a {
-    font-size:22px;
+    font-size:25px;
   }
 
   #nav li {
