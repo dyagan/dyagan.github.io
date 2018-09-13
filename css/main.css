@@ -96,7 +96,8 @@ h5 {
 }
 
 #content a:hover{
-  color: #B80000;
+  color: #a40000;
+/*  color: #B80000;*/
   text-decoration: underline;
 }
 
@@ -276,7 +277,7 @@ ul li:before {
 }
 
 .current {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid !important;
 }
 
 /*.btn {
