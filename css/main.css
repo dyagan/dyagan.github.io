@@ -7,20 +7,36 @@
   margin:0;
   padding:0;
   color: #282828;
+/*  color: black;*/
+/*  color: #323232;*/
+/*  color: #2b2525 ;*/
+/*  color: #353535;*/
+
+
   background: white;
-/*  background: #FFFFFC;*/
+/*  background: whitesmoke;*/
+/*  background: #f2f2f3 ;*/
+/*  background: #f4f4f4 ;*/
+/*  background-color: #fcfcfc ;*/
+
   text-decoration-skip: ink;
 }
 
 /*FONT TOGGLING*/
 
 body{
-  font-family: 'Helvetica', Sans-Serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .heading,.serif,h1,h2,h3, h4, h5 {
-  font-family: serif;
+  font-family: 'Libre Baskerville', serif;
 }
+
+
+
+
+
+
 
 
 
@@ -33,7 +49,7 @@ body {
 /* font-family: 'Open sans', sans-serif;*/
 /*  font-family: 'Muli', Sans-Serif;*/
   font-size: 15px;
-  line-height:131%;
+  line-height:120%;
   max-width:700px;
   margin:auto;
 }
@@ -50,13 +66,13 @@ body {
 
 /*Danny Yagan title is h1*/
 h1 {
-  font-size:35px;
-  letter-spacing: 1px;
+  font-size:38px;
+  letter-spacing: 1.5px;
 }
 
 /*UC Berkeley link is h4*/
 h4 {
-  font-size:16px;
+  font-size: 13px;
   margin-top: 5px;
 }
 
@@ -69,7 +85,7 @@ h3 {
 
 /*Section headers on pages are h5*/
 h5 {
-  font-size: 17px;
+  font-size: 15px;
 /*  margin-top:30px;*/
   border-bottom: 1px solid lightgrey;
   margin-bottom: 10px;
@@ -79,7 +95,7 @@ h5 {
 #content {
   text-align:justify;
   width:100%;
-  padding-top:45px;
+  padding-top:55px;
   padding-bottom: 80px; 
 }
 
@@ -211,6 +227,10 @@ h1 {
   line-height:120%;
 }
 
+#nav li{
+  font-size: 17px;
+}
+
 #nav a {
   text-decoration: none;
   background-color: none;
@@ -295,7 +315,7 @@ ul li:before {
 /*this margin changes the distance between the sub-title and the menu items*/
 #nav ul {
   display: table;
-  margin: 18px auto 0 auto;
+  margin: 35px auto 0 auto;
 }
 
 #nav li {
@@ -342,7 +362,7 @@ ul li:before {
 
 @media (min-width: 900px) {
   #widebody{
-    width: 800px;
+    width: 750px;
   }
 }
 
