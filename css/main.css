@@ -7,47 +7,24 @@
   margin:0;
   padding:0;
   color: #282828;
-/*  color: black;*/
-/*  color: #323232;*/
-/*  color: #2b2525 ;*/
-/*  color: #353535;*/
-
-
   background: white;
-/*  background: whitesmoke;*/
-/*  background: #f2f2f3 ;*/
-/*  background: #f4f4f4 ;*/
-/*  background-color: #fcfcfc ;*/
-
   text-decoration-skip: ink;
 }
 
 /*FONT TOGGLING*/
 
-body{
+/*body{
   font-family: 'Nunito', sans-serif;
 }
 
 .heading,.serif,h1,h2,h3, h4, h5 {
   font-family: 'Libre Baskerville', serif;
-}
-
-
-
-
-
-
-
-
-
-
+}*/
 
 
 /*Font and size of the body*/
 body {
-/*  font-family: 'Helvetica', Sans-Serif;*/
-/* font-family: 'Open sans', sans-serif;*/
-/*  font-family: 'Muli', Sans-Serif;*/
+  font-family: 'Nunito', sans-serif;
   font-size: 15px;
   line-height:120%;
   max-width:700px;
@@ -57,9 +34,7 @@ body {
 
 /*Font of the headers*/
 .heading,.serif,h1,h2,h3, h4, h5 {
-/*  font-family: serif;*/
-/*font-family: 'Work sans', sans-serif;*/
-/*font-family: "Merriweather", serif;*/
+  font-family: 'Libre Baskerville', serif;
 }
 
 /*Size of headers*/
@@ -227,9 +202,6 @@ h1 {
   line-height:120%;
 }
 
-#nav li{
-  font-size: 17px;
-}
 
 #nav a {
   text-decoration: none;
@@ -318,10 +290,11 @@ ul li:before {
   margin: 35px auto 0 auto;
 }
 
+/*Size of menu font*/
 #nav li {
   list-style-type:none;
   display:table-cell;
-/*  font-size:15px;*/
+  font-size:17px;
   padding: 0 20px;
 }
 
@@ -373,11 +346,11 @@ ul li:before {
   }
 
   #nav h1 a {
-    font-size:32px;
+    font-size:36px;
   }
 
   #nav li {
-    font-size:13px;
+    font-size:15px;
     padding: 0 15px;
   }
 
@@ -392,13 +365,21 @@ ul li:before {
   }
 
   h4 {
-    font-size:15px;
+    font-size:12px;
   }
 
   #content h5 {
-    font-size:15px;
+    font-size:14px;
   }
 }
+
+@media (max-width: 500px) {
+  #nav li {
+    font-size:13px;
+    padding: 0 10px;
+  }
+}
+
 
 @media (max-width: 400px) {
   body {
@@ -407,7 +388,7 @@ ul li:before {
   }
 
   #nav h1 a {
-    font-size:25px;
+    font-size:30px;
   }
 
   #nav li {
@@ -426,11 +407,11 @@ ul li:before {
   }
 
   h4 {
-    font-size:13px;
+    font-size:12px;
   }
 
   #content h5 {
-    font-size:13px;
+    font-size:12px;
   }
 }
 
@@ -442,16 +423,17 @@ ul li:before {
 
 .column{
   float: left;
-  padding: 10px;
+  padding: 30px;
   padding-top: 0px;
+  padding-left: 0px;
 }
 
 .left{
-	width: 33%;
+	width: 30%;
 }
 
 .right{
-	width: 67%;
+	width: 70%;
 }
 
 .row:after {
@@ -468,7 +450,7 @@ ul li:before {
     width: 100%;
   }
   .headshot{
-    max-width: 50%;
+    max-width: 28%;
     height: auto;
   }
 }
