@@ -295,8 +295,8 @@ ul li:before {
 #nav li {
   list-style-type:none;
   display:table-cell;
-  font-size:17px;
-  padding: 0 20px;
+  font-size:16px;
+  padding: 0 18px;
 }
 
 #nav.navbar-fixed-top {
@@ -374,6 +374,12 @@ ul li:before {
   }
 }
 
+@media (max-width: 650px) {
+  #nav li {
+    font-size:14px;
+    padding: 0 15px;
+  }
+}
 
 
 
