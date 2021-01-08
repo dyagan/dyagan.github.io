@@ -5,10 +5,6 @@
     <link>https://dyagan.github.io/data/</link>
     <description>Recent content in Danny Yagan - Data on Danny Yagan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://dyagan.github.io/data/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://dyagan.github.io/data/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
