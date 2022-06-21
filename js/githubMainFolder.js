@@ -22,10 +22,14 @@ const username = "akcanbalkir"
 const repoName = "dy_mainfile"
 const mainFolder = "repos/" + username + "/" + repoName + "/"
 const uploadURL = "https://github.com/" + username + "/" + repoName + "/upload/main/"
+const downloadDirectoryURL = "https://download-directory.github.io/?url="
+const repoMainURL = "https://github.com/" + username + "/" + repoName + "/tree/main/"
+const repoDownloadURL = "https://github.com/" + username + "/" + repoName + "/archive/refs/heads/main.zip"
 
 // GLOBAL VARIABLES
 let currPath = '' // keeps track of latest path (updated in getFolderContent)
 
+// function called on page load
 $(document).ready(function () {
     getFolderContent('');
 });
@@ -50,31 +54,63 @@ async function getFolderContent(path) {
     const response = await fetch(url);
     let result = await response.json();
 
+    // sort by folder - file (alphabetical)
+    result.sort(function (a,b) {
+        if (a.type == b.type) {
+            return a.name.localeCompare(b.name)
+        }
+
+        return a.type == "dir"? -1 : 1
+    })
+
     // populate folder content 
     result.forEach(element => {
-        let anchor = element.type == "dir"? createDirRepoContent(element) : createFileRepoContent(element)
-        repoContent.appendChild(anchor)
-        repoContent.appendChild(document.createTextNode(" | " + element.type))
-        repoContent.appendChild(document.createElement("br"))
+        let row = element.type == "dir"? createDirRepoContent(element) : createFileRepoContent(element)
+        repoContent.appendChild(row)
     });
 
     // update the current path (global variables)
     currPath = path
+
+    // update directory download button
+    addDirDownloadButton(currPath)
+
+    // clear options notes
+    const optionNotes = document.getElementById("optionNotes")
+    clearElement(optionNotes)
 }
 // function for creating directory repo element
 function createDirRepoContent(element) {
     const anchor = document.createElement("a")
     anchor.onclick=function() { onClickDirRepoContent(element) }
-    anchor.textContent=element.name + "/"
-    return anchor
+    anchor.appendChild(createIcon("/assets/folder.svg"))
+    anchor.appendChild(document.createTextNode(element.name + "/"))
+    
+    const row = createRowRepContent()
+    row.appendChild(anchor)
+    return row
 }
 // function for creating file repo element
 function createFileRepoContent(element) {
     const anchor = document.createElement("a")
     anchor.href = element.download_url
-    anchor.textContent = element.name
+    anchor.appendChild(createIcon("/assets/file-text.svg"))
+    anchor.appendChild(document.createTextNode(element.name)) 
     anchor.target = "_blank"
-    return anchor
+
+    const row = createRowRepContent()
+    row.appendChild(anchor)
+    return row
+}
+// create row for repo content
+function createRowRepContent(){
+    const row = document.createElement("div")
+    row.style.marginTop = "8px"
+    return row
+}
+
+function downloadRepoFile(link){
+    fetch(downloadRepoFile)
 }
 // function called when clicking dir repo content
 function onClickDirRepoContent(dirItem) {
@@ -152,6 +188,37 @@ function redirectFromPathLabel(path) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                              DOWN GIT
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function which returns the download url for the current directory
+function dirDownloadURL(path) {
+    if (path == '') {
+        return repoDownloadURL
+    }
+    return downloadDirectoryURL + repoMainURL + path
+}
+// function which adds the download <a> tag for the current directory
+function addDirDownloadButton(path) {
+    // get div which holds the directory download link
+    const dirDownloadCotainer = document.getElementById("dirDownloadCotainer")
+
+    // clear div which holds the directory download link
+    clearElement(dirDownloadCotainer)
+
+    // add <a> tag
+    const anchor = document.createElement("a")
+    anchor.textContent = "Download Directory"
+    anchor.onclick = () => {dirFetchDownload(path)}
+    dirDownloadCotainer.appendChild(anchor) 
+}
+function updateDownloadDir() {
+    addDirDownloadButton(currPath)
+}
+function dirFetchDownload(path){
+    window.open(dirDownloadURL(path), 'dirDownloadFrame')
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                         MISC
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // function to clear element
@@ -159,4 +226,17 @@ function clearElement(element) {
     while(element.firstChild) {
         element.removeChild(element.firstChild)
     }
+}
+// function to create an icon span element
+function createIcon(srcImg) {
+    const folderSpan = document.createElement("span")
+    folderSpan.style.display = "inline-block"
+    folderSpan.style.verticalAlign = "text-bottom"
+
+    const folderIcon = document.createElement("img")
+    folderIcon.style.margin="0"
+    folderIcon.src = srcImg
+
+    folderSpan.appendChild(folderIcon)
+    return folderSpan
 }

@@ -233,7 +233,7 @@ ul li:before {
   content:"\00BB \0020";
 }
 
-#nav ul li:before, {
+#nav ul li:before {
   content:'';
   margin-right:0;
 }

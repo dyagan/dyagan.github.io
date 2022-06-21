@@ -144,15 +144,26 @@
 			<a onclick="redirectFromPathLabel('')">dy_mainfile/</a>
 		</div>
 		
+		<br>
+		
 		
 		<h5>Content: </h5>
 		<div id="repoContent"></div>
 		
-		<h5>Options:</h5>	
+		<br>
 		
-		<form>
-			<input type="button" value="Upload to folder" onclick="uploadToCurrPath()">
-		</form>	
+		
+		<h5>Current Directory Options:</h5>	
+		
+		<a onclick="uploadToCurrPath('')">Upload</a>
+		<br>
+		
+		<div id="dirDownloadCotainer">
+			<a onclick="dirFetchDownload('')">Download Directory</a>
+		</div>
+		
+		<iframe name="dirDownloadFrame" height="0"></iframe>
+		
 		<div id="optionNotes"></div>	
 	</section>
 </section>
