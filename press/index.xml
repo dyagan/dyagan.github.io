@@ -4,7 +4,8 @@
     <title>Danny Yagan - Press on Danny Yagan</title>
     <link>https://dyagan.github.io/press/</link>
     <description>Recent content in Danny Yagan - Press on Danny Yagan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://dyagan.github.io/press/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://dyagan.github.io/press/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

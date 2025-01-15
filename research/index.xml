@@ -4,7 +4,8 @@
     <title>Danny Yagan - Research on Danny Yagan</title>
     <link>https://dyagan.github.io/research/</link>
     <description>Recent content in Danny Yagan - Research on Danny Yagan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://dyagan.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://dyagan.github.io/research/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
