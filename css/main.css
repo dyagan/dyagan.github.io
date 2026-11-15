@@ -623,7 +623,7 @@ ul li:before {
 
 /**************************************************/
 /* NAVY & MINT ACCENTS ("Option E", 2026-11-14)    */
-/* Navy #14213D, mint #3EB489, dark mint #18704F.  */
+/* Navy #002676, mint #3EB489, dark mint #18704F.  */
 /* To revert: delete this block and the            */
 /* accent-rule div in layouts/partials/header.html */
 /* (full backup in backup/2026-11-14_pre-navy-mint)*/
@@ -631,7 +631,7 @@ ul li:before {
 
 /* Name and "UC Berkeley Economics" in navy */
 #nav h1 a, #nav h4 a {
-  color: #14213D;
+  color: #002676;
 }
 
 /* Short mint rule between subheading and menu */
@@ -649,19 +649,19 @@ ul li:before {
 
 /* Current page in the menu: navy text, mint underline */
 #nav .current {
-  color: #14213D;
+  color: #002676;
   border-bottom: 2px solid #3EB489 !important;
 }
 
 /* Headings in navy (section rules stay light grey) */
 h3, h5, #content h1, #content h2 {
-  color: #14213D;
+  color: #002676;
 }
 
 /* Links: navy with a thin mint underline; dark mint on hover */
 #content a:link,
 #content a:visited {
-  color: #14213D;
+  color: #002676;
   text-decoration: underline;
   text-decoration-color: #3EB489;
   text-decoration-thickness: 1px;
