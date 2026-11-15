@@ -619,3 +619,63 @@ ul li:before {
     text-align: left;
   }
 }
+
+
+/**************************************************/
+/* NAVY & MINT ACCENTS ("Option E", 2026-11-14)    */
+/* Navy #14213D, mint #3EB489, dark mint #18704F.  */
+/* To revert: delete this block and the            */
+/* accent-rule div in layouts/partials/header.html */
+/* (full backup in backup/2026-11-14_pre-navy-mint)*/
+/**************************************************/
+
+/* Name and "UC Berkeley Economics" in navy */
+#nav h1 a, #nav h4 a {
+  color: #14213D;
+}
+
+/* Short mint rule between subheading and menu */
+.accent-rule {
+  width: 48px;
+  height: 2px;
+  background: #3EB489;
+  margin: 18px auto 0 auto;
+}
+
+/* Keep total spacing above the menu about the same (was 35px) */
+#nav .big ul {
+  margin-top: 18px;
+}
+
+/* Current page in the menu: navy text, mint underline */
+#nav .current {
+  color: #14213D;
+  border-bottom: 2px solid #3EB489 !important;
+}
+
+/* Headings in navy (section rules stay light grey) */
+h3, h5, #content h1, #content h2 {
+  color: #14213D;
+}
+
+/* Links: navy with a thin mint underline; dark mint on hover */
+#content a:link,
+#content a:visited {
+  color: #14213D;
+  text-decoration: underline;
+  text-decoration-color: #3EB489;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  /* the global "* { background: white }" rule would otherwise let the
+     next line's links paint over this line's underline */
+  background-color: transparent;
+}
+
+#content a:hover {
+  color: #18704F;
+  text-decoration-thickness: 2px;
+}
+
+#content a:active {
+  background-color: transparent;
+}
